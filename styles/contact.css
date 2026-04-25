@@ -1,0 +1,242 @@
+.contact{
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.home, .eco, .about{
+  font-weight: normal;
+}
+
+.contact{
+  font-weight: bold;
+}
+
+
+body{
+  padding-top: 234px;
+}
+
+section h1{
+  text-align: center;
+  font-size: 48px;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+section p{
+  text-align: center;
+  font-size: 24px;
+  font-weight: 500;
+  margin-bottom: 136px;
+}
+
+section{
+  padding: 0 112px;
+  margin-bottom: 208px;
+}
+
+.container {
+  display: flex;
+  gap: 76px;
+}
+
+.left-container{
+  border: 1px solid rgb(231, 231, 231);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.089);
+  border-radius: 4px;
+  padding: 40px 35px 30px;
+  width: 340px;
+}
+
+.call, .write{
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 24px;
+}
+
+.call h3, .write h3{
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.call img, .write img{
+  width: 40px;
+  height: 40px;
+}
+
+.text, .phone, .email-1, .email-2{
+  font-weight: 400;
+  font-size: 14px;
+  text-align: left;
+  margin: 0;
+}
+
+.seperator-1{
+  background-color: black;
+  height: 2px;
+  width: 100%;
+  margin: 32px 0;
+}
+
+.text{
+  margin-bottom: 1rem;
+}
+
+.email-1{
+  margin-bottom: 1rem;
+}
+
+
+.right-container{
+  border: 1px solid rgb(231, 231, 231);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.089);
+  padding: 40px 31px;
+  /* flex: 1; */
+  width: 100%;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  /* width: 100%; */
+  height: 100%;
+}
+
+.details{
+  display: flex;
+  /* grid-template-columns: 1fr 1fr 1fr; */
+  gap: 1rem;
+}
+
+input{
+  padding: 13px 16px;
+  border-radius: 4px;
+  border: none;
+  background-color: rgba(245, 245, 245, 1);
+  font-family: inter;
+  width: 100%;
+}
+
+
+textarea{
+  resize: none;
+  background-color: rgba(245, 245, 245, 1);
+  outline: none;
+  border: none;
+  padding: 13px 16px;
+  font-family: inter;
+  flex: 1;
+}
+
+input:focus, textarea:focus{
+  outline: none;
+}
+
+
+.button{
+  text-align: right;
+  margin-top: 16px;
+}
+
+.btn{
+  margin-top: 64px;
+  padding: 16px 48px;
+  color: white;
+  background-color: rgba(34, 139, 34, 1);
+  border-radius: 4px;
+  border: none;
+}
+
+
+
+@media (max-width: 1000px) {
+
+  .mobile-nav{
+    z-index: 1000;
+  }
+
+  body{
+    padding-top: 80px;
+  }
+  section{
+    padding: 0 24px;
+    margin-bottom: 30px;
+  }
+  
+  section h1{
+    text-align: center;
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 3px;
+  }
+
+  section p{
+    text-align: center;
+    font-size: 16px;
+    margin-bottom: 30px;
+  }
+
+
+  .container{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .call img, .write img{
+    width: 38px;
+    height: 38px;
+  }
+
+  .details{
+    grid-template-columns: 1fr;
+  }
+
+  .left-container{
+    padding: 38px 33px 28px;
+    width: auto;
+  }
+
+  .right-container{
+    padding: 16px 12px 7px;
+    height: 50vh;
+    width: auto;
+  }
+
+  form{
+    row-gap: 13px;
+  }
+
+  .details{
+    display: flex;
+    flex-direction: column;
+    row-gap: 6px;
+  }
+
+  input{
+    width: auto;
+    padding: 12px 6px;
+    font-size: 10px;
+  }
+
+  textarea{
+    padding: 6px;
+    font-size: 10px;
+    flex: 1;
+    /* height: 100px; */
+  }
+
+  .button{
+    text-align: right;
+    /* margin-top: 16px; */
+    margin-bottom: 16px;
+  }
+
+  .btn{
+    border-radius: 2px;
+    font-size: 16px;
+    padding: 12px 19px;
+  }
+}
