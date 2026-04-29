@@ -21,10 +21,6 @@ h1{
   font-size: 48px;
 }
 
-.body{
-  padding-top: 200px;
-}
-
 .mobile-nav{
   display: none;
 }
@@ -98,26 +94,28 @@ h1{
 .section-1{
   height: 100vh;
   padding: 0 112px;
+  padding-top: 253px;
 }
 
 .section-1-container {
   display: flex;
   gap: 57px ;
-  height: auto;
+  height: fit-content;
 }
 
 .section-1-text{
-  width: 55%;
+  width: 587px;
+  height: 50%;
 }
 
 .section-1-text h1{
-  font-size: 68px;
+  font-size: 48px;
   line-height: 150%;
   margin-bottom: 1rem;
 }
 
 .section-1-text p{
-  font-size: 34px;
+  font-size: 24px;
   line-height: 150%;
   margin-bottom: 46px;
   
@@ -137,7 +135,10 @@ h1{
 
 
 .section-1-image-container{
-  width: 45%;
+  margin-top: 36px;
+  /* width: 50%; */
+  flex: 1;
+  height: 459px;
 }
 
 .section-1 img{
@@ -514,8 +515,9 @@ footer img{
   }
 
   .section-1-image-container{
-  width: 100%;
-}
+    margin: 0;
+    width: 100%;
+  }
 
   .section-2{
     padding: 0 24px;
